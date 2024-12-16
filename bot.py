@@ -22,3 +22,8 @@ async def on_message(message):
         await message.channel.send(message.content)
 
 client.run("MTMxODIyNzY2NDkwMDg1Mzc2MA.GTeRmH.U9R7Y3KkdNnhJhWbdJ0Pv_cf-9bb9JHB9z6MJk")
+
+
+@bot.event
+async def on_ready():
+    print(f'{bot.user} olarak giriş yaptık')
